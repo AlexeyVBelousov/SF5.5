@@ -23,7 +23,10 @@ class MainClass
         {
             modif = modif.Remove(0, 2);
         }
-        
+
+        Console.BackgroundColor = (ConsoleColor)deep;
+        Console.ForegroundColor = (ConsoleColor)(deep + 1);
+
         Console.WriteLine("..." + modif);
 
         if (deep > 1)
